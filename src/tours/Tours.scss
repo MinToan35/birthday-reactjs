@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.tours{
+    --background-color: rgb(241,245,248);
+    background-color: var(--background-color);
+    padding: 70px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .tours-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        margin-bottom: 80px;
+        .tour-title{
+            font-size: 40px;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+            color: rgb(16,42,66);
+        }
+        .underline{
+            height: 4px;
+            width: 100px;
+            background-color: rgb(73,166,233);
+        }
+    }
+    
+    .btn-tour-reset {
+        position: relative;
+        height: 50px;
+        padding: 0 30px;
+        border: 2px solid #000;
+        background: #e8e8e8;
+        user-select: none;
+        white-space: nowrap;
+        transition: all .05s linear;
+        font-family: inherit;
+        span {
+            font-size: 15px;
+            z-index: 3;
+            position: relative;
+            font-weight: 600;
+           }
+       }
+       
+       .btn-tour-reset:before, .btn-tour-reset:after {
+        content: "";
+        position: absolute;
+        background: #e8e8e8;
+        transition: all .2s linear;
+       }
+       
+       .btn-tour-reset:before {
+        width: calc(100% + 6px);
+        height: calc(100% - 16px);
+        top: 8px;
+        left: -3px;
+       }
+       
+       .btn-tour-reset:after {
+        width: calc(100% - 16px);
+        height: calc(100% + 6px);
+        top: -3px;
+        left: 8px;
+       }
+       
+       .btn-tour-reset:hover {
+        cursor: crosshair;
+       }
+       
+       .btn-tour-reset:active {
+        transform: scale(0.95);
+       }
+       
+       .btn-tour-reset:hover:before {
+        height: calc(100% - 32px);
+        top: 16px;
+       }
+       
+       .btn-tour-reset:hover:after {
+        width: calc(100% - 32px);
+        left: 16px;
+       }
+    .tour-container{
+        background-color: #fff;
+        width: 90vw;
+        max-width: 600px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+        .tour-img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .tour-footer{
+            padding: 20px 30px;
+            .tour-info{
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+                align-items: center;
+                
+                
+                .tour-price{
+                    color: rgb(73,166,233);
+                    background-color: rgb(235,247,255);
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                }
+            }
+            .tour-text{
+                line-height: 2;
+                .btn-readMore{
+                    border: none;
+                    background-color: transparent;
+                    color: rgb(73,166,233);
+                    font-size: 20px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    
+    .btn-tour-delete {
+        --color: rgb(73,166,233);
+        padding: 0.8em 1.7em;
+        background-color: transparent;
+        border-radius: .3em;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: .5s;
+        font-weight: 400;
+        font-size: 17px;
+        border: 1px solid;
+        font-family: inherit;
+        text-transform: uppercase;
+        color: var(--color);
+        z-index: 1;
+        display: block;
+        margin: 20px auto;
+       }
+       
+       .btn-tour-delete::before, .btn-tour-delete::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: var(--color);
+        transition: 1s ease;
+       }
+       
+       .btn-tour-delete::before {
+        top: -1em;
+        left: -1em;
+       }
+       
+       .btn-tour-delete::after {
+        left: calc(100% + 1em);
+        top: calc(100% + 1em);
+       }
+       
+       .btn-tour-delete:hover::before, .btn-tour-delete:hover::after {
+        height: 410px;
+        width: 410px;
+       }
+       
+       .btn-tour-delete:hover {
+        color: rgb(10, 25, 30);
+       }
+       
+       .btn-tour-delete:active {
+        filter: brightness(.8);
+       }
+       
+}

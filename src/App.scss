@@ -11,12 +11,16 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+.birthday-body{
     background-color: var(--color-pink);
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
-
 .birthday-container {
     width: 90vw;
     max-width: 400px;
