@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-pink: #F5A9F2;
+    --color-white: #fff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.birthday-container {
+    width: 90vw;
+    max-width: 400px;
+    background-color: var(--color-white);
+    margin: 50px 0;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0 0px 50px;
+    padding: 20px 40px;
+
+    .birthday-title {
+        padding-bottom: 20px;
+    }
+
+    .person-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .person-img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .person-info {
+            margin-left: 20px;
+
+
+        }
+    }
+
+    .person-deleteAll {
+        --border-radius: 15px;
+        --border-width: 4px;
+        appearance: none;
+        position: relative;
+        padding: 1em 2em;
+        border: 0;
+        background-color: #212121;
+        font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        z-index: 2;
+        border-radius: var(--border-radius);
+        display: block;
+        margin: 20px auto;
+       }
+       
+       .person-deleteAll::after {
+        --m-i: linear-gradient(#000, #000);
+        --m-o: content-box, padding-box;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: var(--border-width);
+        border-radius: var(--border-radius);
+        background-image: conic-gradient(
+               #488cfb,
+               #29dbbc,
+               #ddf505,
+               #ff9f0e,
+               #e440bb,
+               #655adc,
+               #488cfb
+           );
+        -webkit-mask-image: var(--m-i), var(--m-i);
+        mask-image: var(--m-i), var(--m-i);
+        -webkit-mask-origin: var(--m-o);
+        mask-origin: var(--m-o);
+        -webkit-mask-clip: var(--m-o);
+        mask-composite: exclude;
+        -webkit-mask-composite: destination-out;
+        filter: hue-rotate(0);
+        animation: rotate-hue linear 500ms infinite;
+        animation-play-state: paused;
+       }
+       
+       .person-deleteAll:hover::after {
+        animation-play-state: running;
+       }
+       
+       @keyframes rotate-hue {
+        to {
+         filter: hue-rotate(1turn);
+        }
+       }
+       
+       .person-deleteAll,
+       .person-deleteAll::after {
+        box-sizing: border-box;
+       }
+       
+       .person-deleteAll:active {
+        --border-width: 5px;
+       }
+
+}
