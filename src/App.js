@@ -1,10 +1,15 @@
 import "./App.scss";
 import Birthday from "./birthday/Birthday";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Tours from "./tours/App";
 function App() {
   return (
-    <div>
-      <Birthday />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<Birthday />} />
+        <Route path="/tours" exact element={<Tours />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

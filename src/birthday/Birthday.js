@@ -10,13 +10,15 @@ const Birthday = () => {
     else setpeople([]);
   };
   return (
-    <main className="birthday-container">
-      <h1 className="birthday-title">{people.length} birthdays to day</h1>
-      <List people={people} />
-      <button className="person-deleteAll" onClick={() => handleDelete()}>
-        {reset ? "Refresh" : "Delete All"}
-      </button>
-    </main>
+    <div className="birthday-body">
+      <main className="birthday-container">
+        <h1 className="birthday-title">{people.length} birthdays to day</h1>
+        <List people={people} />
+        <button className="person-deleteAll" onClick={() => handleDelete()}>
+          {reset ? "Refresh" : "Delete All"}
+        </button>
+      </main>
+    </div>
   );
 };
 
