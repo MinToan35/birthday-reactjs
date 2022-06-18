@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import data from "./data";
 import "./review.scss";
-import { FaQuoteRight } from "react-icons/fa";
 const Review = () => {
   const [index, setIndex] = useState(0);
   const { image, name, job, text } = data[index];
