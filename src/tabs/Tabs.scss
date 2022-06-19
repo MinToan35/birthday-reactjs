@@ -2,11 +2,11 @@
 .tabs-container-body {
     min-height: 100vh;
     background-color: rgb(241, 245, 248);
-    padding: 50px 10vw;
+    padding: 10vw 10vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
+    
     
     .tabs-header {
         display: flex;
@@ -38,16 +38,16 @@
                 padding: 20px 40px;
                 font-size: 20px;
                 transition: 0.5s;
+                
             }
 
             .btn-tabs:hover {
                 color: #5bb8d2;
-                box-shadow: -1px 0px #5bb8d2;
             }
 
             .active-btn {
                 color: #2caeba;
-                box-shadow: -2px 0 #2caeba;
+                box-shadow: -4px 0px 0 -2px #2caeba;
             }
         }
         .tabs-info{
@@ -80,5 +80,32 @@
                 }
             }
         }
+    }
+}
+@media screen and (max-width:998px) {
+    .tabs-container{
+        flex-direction: column;
+        .btn-container{
+            flex-direction: row !important;
+        }
+        .tabs-info{
+            margin-left: 0 !important;
+        }
+    }
+    .btn-tabs{
+        padding: 5px !important;
+    }
+   
+
+    .active-btn {
+        box-shadow: 0 4px 0 -2px #2caeba !important;
+    }
+}
+@media screen and (max-width:400px){
+    .btn-tabs{
+        font-size: 20px !important;
+    }
+    .tabs-info-title{
+        font-size: 20px !important;
     }
 }

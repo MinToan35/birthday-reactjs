@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Tabs.scss";
+
 const url = "https://course-api.com/react-tabs-project";
 const Tabs = () => {
   const [loading, setLoading] = useState(true);

@@ -6,7 +6,7 @@ import Review from "./reviews/Review";
 import Question from "./question/App";
 import Menu from "./menu/App";
 import Tabs from "./tabs/Tabs";
-//import Test from "./06-tabs/final/src/App";
+import Slider from "./slider/App";
 function App() {
   return (
     <BrowserRouter>
@@ -16,7 +16,8 @@ function App() {
         <Route path="/review" exact element={<Review />} />
         <Route path="/question" exact element={<Question />} />
         <Route path="/menu" exact element={<Menu />} />
-        <Route path="/Tabs" exact element={<Tabs />} />
+        <Route path="/tabs" exact element={<Tabs />} />
+        <Route path="/slider" exact element={<Slider />} />
       </Routes>
     </BrowserRouter>
   );
