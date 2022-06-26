@@ -1,0 +1,162 @@
+.grocery-body {
+    background-color: #f1f5f8;
+    width: 100%;
+    min-height: 100vh;
+    padding: 8rem 0;
+
+    .section-center {
+        width: 90vw;
+        max-width: 35rem;
+        background-color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 0.25rem;
+        padding: 2rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+        .grocery-form {
+            .alert {
+                margin-bottom: 1rem;
+                height: 1.25rem;
+                font-size: 0.7rem;
+                border-radius: 0.25rem;
+                letter-spacing: 0.1rem;
+                text-transform: capitalize;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .alert-danger {
+                color: #721c24;
+                background: #f8d7da;
+            }
+
+            .alert-success {
+                color: #155724;
+                background: #d4edda;
+            }
+
+            h3 {
+                color: #063251;
+                margin-bottom: 1.5rem;
+                text-transform: capitalize;
+                font-size: 28px;
+                margin-bottom: 24px;
+                letter-spacing: 0.1rem;
+            }
+
+            .form-control {
+                display: flex;
+                justify-content: center;
+
+                .grocery {
+                    padding: 0.25rem;
+                    padding-left: 1rem;
+                    background-color: #f1f5f8;
+                    border-radius: 0.25rem 0 0 0.25rem;
+                    border-color: transparent;
+                    font-size: 1rem;
+                    color: #617d98;
+                    width: 80%;
+                }
+
+                .submit-btn {
+                    background-color: #a5d5f8;
+                    border-color: transparent;
+                    align-items: center;
+                    padding: 0.25rem;
+                    text-transform: capitalize;
+                    letter-spacing: 2px;
+                    border-radius: 0 0.25rem 0.25rem 0;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    font-size: 0.85rem;
+                    min-width: 70px;
+                    width: 20%;
+                }
+
+                .submit-btn:hover {
+                    background: #49a6e9;
+                    color: #fff;
+                }
+            }
+
+
+
+        }
+
+        .grocery-container {
+            margin-top: 2rem;
+
+            .grocery-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 0.5rem;
+                transition: 0.3s;
+                padding: 0.25rem 1rem;
+                border-radius: 0.25rem;
+                text-transform: capitalize;
+
+                .title {
+                    margin-bottom: 0;
+                    color: #102a42;
+                    letter-spacing: 2px;
+                    transition: 0.3s;
+                }
+
+                .edit-btn,
+                .delete-btn {
+                    background: transparent;
+                    border-color: transparent;
+                    cursor: pointer;
+                    font-size: 0.7rem;
+                    margin: 0 0.15rem;
+                    transition: 0.3s;
+                    text-transform: capitalize;
+                }
+                .edit-btn {
+                    color: 	#6be675;
+                  }
+                  .edit-btn:hover {
+                    color: 		#25bb32;
+                  }
+                  .delete-btn {
+                    color: 		#e66b6b;
+                  }
+                  .delete-btn:hover {
+                    color: 			#bb2525;
+                  }
+            }
+
+            .grocery-item:hover {
+                color: #617d98;
+                background: #f1f5f8;
+            }
+
+        }
+        .clear-btn {
+            text-transform: capitalize;
+            width: 10rem;
+            height: 1.5rem;
+            background: transparent;
+            border-color: transparent;
+            color:	#e66b6b;
+            margin: 0 auto;
+            font-size: 0.85rem;
+            letter-spacing: 0.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 1.25rem;
+          }
+          .clear-btn:hover {
+            color: #bb2525;
+          }
+    }
+
+    .section-center:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+}

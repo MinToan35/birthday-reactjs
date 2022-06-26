@@ -7,6 +7,8 @@ import Question from "./question/App";
 import Menu from "./menu/App";
 import Tabs from "./tabs/Tabs";
 import Slider from "./slider/App";
+import Lorem from "./lorem/App";
+import CRUD from "./crud/App";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +20,9 @@ function App() {
         <Route path="/menu" exact element={<Menu />} />
         <Route path="/tabs" exact element={<Tabs />} />
         <Route path="/slider" exact element={<Slider />} />
+
+        <Route path="/lorem" exact element={<Lorem />} />
+        <Route path="/crud" exact element={<CRUD />} />
       </Routes>
     </BrowserRouter>
   );
